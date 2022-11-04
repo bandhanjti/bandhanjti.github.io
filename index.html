@@ -20,10 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Sales Upload<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" id="sales">Sales Upload<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reports</a>
+            <a class="nav-link" href="#" id="reports">Reports</a>
           </li>
         </ul>
       </div>
@@ -32,11 +32,20 @@
   
   <div class="container">
     <div class="embed-responsive embed-responsive-16by9 mt-2">
-      <iframe src="https://script.google.com/macros/s/AKfycbw_qOsQLDIyRtspM-TKisEeKmfd9bT_J5-OCqiW6ha-XixxOKqwg2Ht_nX9ybf1WBJ0/exec" allowfullscreen></iframe>
+      <iframe id="viewer" src="https://script.google.com/macros/s/AKfycbw_qOsQLDIyRtspM-TKisEeKmfd9bT_J5-OCqiW6ha-XixxOKqwg2Ht_nX9ybf1WBJ0/exec" allowfullscreen></iframe>
     </div>
   </div>
   
-
+    <script>
+      document.getElementById("sales").addEventListener("click", setSalesRoute)
+      function setSalesRoute(){
+        document.getElementById("viewer").src = "https://script.google.com/macros/s/AKfycbwlJkSQfyaEX8Y8KU3rVTl5gz5yMM17BL15mqR6yrvbDiG8N1ZbBQL-asajdrnY70f0/exec?v=salesup"
+      }
+      document.getElementById("reports").addEventListener("click", setReportsRoute)
+      function setReportsRoute(){
+        document.getElementById("viewer").src = "https://script.google.com/macros/s/AKfycbwlJkSQfyaEX8Y8KU3rVTl5gz5yMM17BL15mqR6yrvbDiG8N1ZbBQL-asajdrnY70f0/exec?v=reports"
+      }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
