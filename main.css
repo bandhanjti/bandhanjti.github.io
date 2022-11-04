@@ -2,8 +2,6 @@
 Project Name: Bandhan Partner
 Create By: Towfik Omor
 */
-
-iframe{
-    width: auto;
+.embed-responsive{
     min-height: 100vh;
 }
