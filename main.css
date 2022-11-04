@@ -4,5 +4,6 @@ Create By: Towfik Omor
 */
 
 iframe{
+    width: auto;
     min-height: 100vh;
 }
