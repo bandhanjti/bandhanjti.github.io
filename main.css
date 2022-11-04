@@ -1,8 +1,8 @@
+/**
+Project Name: Bandhan Partner
+Create By: Towfik Omor
+*/
+
 iframe{
-    width: 90%;
-    height: 90vh;
-    align-self: center;
-}
-h2{
-    text-align: center;
+    min-height: 100vh;
 }
